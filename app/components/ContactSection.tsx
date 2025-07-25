@@ -224,7 +224,7 @@ export default function ContactSection() {
 
                 {submitStatus === 'error' && (
                   <div className="text-red-400 text-center font-medium">
-                    Une erreur s'est produite. Veuillez réessayer.
+                    Une erreur s&#39;est produite. Veuillez réessayer.
                   </div>
                 )}
               </form>

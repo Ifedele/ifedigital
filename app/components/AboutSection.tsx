@@ -94,7 +94,7 @@ export default function AboutSection() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#FFD700]">2+</div>
-                <div className="text-sm text-gray-400 font-medium">Années d'expertise</div>
+                <div className="text-sm text-gray-400 font-medium">Années d&#39;expertise</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#FFD700]">98%</div>

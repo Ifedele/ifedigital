@@ -131,7 +131,7 @@ export default function TestimonialsSection() {
             Ce que disent nos <span className="text-[#FFD700]">clients</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            La satisfaction technique et l'innovation sont notre plus belle récompense
+            La satisfaction technique et l&#39;innovation sont notre plus belle récompense
           </p>
           <div className="w-20 h-1 bg-[#FFD700] rounded-full mx-auto mt-6"></div>
         </div>
@@ -153,7 +153,7 @@ export default function TestimonialsSection() {
                         <div className="mb-6">
                           <i className="ri-double-quotes-l text-6xl text-[#FFD700] mb-4 opacity-20"></i>
                           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed italic">
-                            "{testimonial.content}"
+                            &#34;{testimonial.content}&#34;
                           </p>
                         </div>
 

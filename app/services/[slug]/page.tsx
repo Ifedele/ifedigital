@@ -2,21 +2,22 @@ import services from '@/app/data/servicesData';
 import { notFound } from 'next/navigation';
 import ServicePageClient from './ServicePageClient';
 
-// 👇 Indique clairement que c’est une fonction async
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
+// ✅ Fonction de génération statique des slugs
+export async function generateStaticParams() {
   return services.map((service) => ({
     slug: service.slug,
   }));
 }
 
-// 👇 Typage propre
-type Props = {
+// ✅ Typage explicite pour les props (et pas un type générique de Next)
+interface PageProps {
   params: {
     slug: string;
   };
-};
+}
 
-export default function Page({ params }: Props) {
+// ✅ Composant principal
+export default function Page({ params }: PageProps) {
   const service = services.find((s) => s.slug === params.slug);
   if (!service) return notFound();
 

@@ -43,7 +43,7 @@ export default function TestimonialsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const autoSlideRef = useRef<NodeJS.Timeout>();
+  const autoSlideRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
